@@ -15,7 +15,8 @@ namespace OOP05
         }
         public double ABSI()
         {
-           return ObvodPasu / (Math.Pow(BMI(),2/3) * Math.Sqrt(Vyska));
+            double vypocet = ObvodPasu / (Math.Pow(BMI(), (double)2 / 3) * Math.Sqrt(Vyska));
+            return vypocet;
         }
         public override string ToString()
         {
