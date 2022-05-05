@@ -32,9 +32,28 @@ namespace OOP05
             }
             set
             {
-                if (value >= 10) value /= 10;
+                if (value >= 2.5) value /= 100;
                 vyska = value;
             }
+        }
+        public Osoba(string jmeno, string prijmeni)
+        {
+            Jmeno = jmeno;
+            Prijmeni = prijmeni;
+        }
+        public virtual double BMI()
+        {
+            double bmi = Hmotnost / (Vyska*Vyska);
+            return bmi;
+        }
+        public override string ToString()
+        {
+            string s = "\nJméno je: " + Jmeno
+                + "\nPříjmení je: " + Prijmeni
+                + "\nVýška v metrech: " + Vyska
+                + "\nHmotnost je: " + Hmotnost
+                + "\nIndex BMI: " + BMI();
+            return base.ToString()+s;
         }
     }
 }

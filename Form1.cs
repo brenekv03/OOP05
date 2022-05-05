@@ -16,5 +16,14 @@ namespace OOP05
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Osoba os1 = new Osoba("Pavel", "Bodnar");
+            os1.Hmotnost = 75;
+            os1.Vyska = 1.85;
+            os1.BMI();
+            MessageBox.Show( os1.ToString());
+        }
     }
 }
