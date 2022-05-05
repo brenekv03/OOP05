@@ -25,5 +25,14 @@ namespace OOP05
             os1.BMI();
             MessageBox.Show( os1.ToString());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Pacient pc1 = new Pacient("Lakatoš", "Bodnaroš", 0.5);
+            pc1.Hmotnost = 80;
+            pc1.Vyska = 1.80;
+            pc1.ABSI();
+            MessageBox.Show(pc1.ToString());
+        }
     }
 }
